@@ -1,0 +1,222 @@
+/*homepage styling*/
+.mainContainer {
+   padding: 40px;
+   display: inline-flex;
+}
+
+.errorContainer{
+   text-align: center;
+   color: red;
+}
+
+.paperImg{
+   width: 50%;
+   height: 50%;
+   float: left;
+   margin-right: 30px;
+}
+
+.captionOverlay{
+   background-color: rgba(255, 255, 255, 0.589);
+   position: absolute;
+}
+
+/*Papers page styling*/
+.paperContainer{
+   text-align: justify;
+   border: solid 3px rgb(14, 23, 37);
+   padding: 20px;
+   float: right;
+   width: 50%;
+   border-radius: 10px;
+   background-color: rgb(205, 245, 245);
+}
+
+.paperContainer h1{
+   margin-top: 0;
+   text-decoration: underline;
+}
+
+.paperContainer h2{
+   margin: 0;
+   font-size: 1.3em;
+   text-decoration: underline;
+}
+
+.paperContainer p{
+   margin: 0;
+   font-size: 1.1em;
+   margin-bottom: 25px;
+}
+
+.topContainer{
+   text-align: center;
+   border: solid 2px rgb(14, 23, 37);
+   margin: 20px auto 5px auto;
+   width: 40%;
+   padding: 15px;
+   cursor: pointer;
+   background-color: rgb(205, 245, 245);
+}
+
+.doiLink{
+   color: black;
+}
+
+.topContainer:hover .doiLink{
+   color: white;
+}
+
+.topContainer:hover{
+   background-color: rgb(14, 23, 37);
+   color: white;
+}
+
+.detailsContainer{
+   cursor: auto;
+   text-align: center;
+   word-break: break-word;
+}
+
+.detailsHeading{
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+.details{
+   text-align: justify;
+}
+
+input[type=text], [type=password]{
+   padding: 15px;
+   margin: 40px auto 20px auto;
+   display: block;
+   width: 30%;
+   border: solid 2px rgb(14, 23, 37);
+   border-radius: 10px;
+   background-color: rgb(231, 231, 231);
+}
+
+/* changes placeholder text to black */
+::placeholder {
+   color: black;
+   opacity: 1;
+ }
+
+select{
+   padding: 15px;
+   margin: 20px auto;
+   width: auto;
+   display: block;
+   border: solid 2px rgb(14, 23, 37);
+   border-radius: 10px;
+   background-color: rgb(231, 231, 231);
+   color: black;
+}
+
+.pageNumContainer{
+   text-align: center;
+   font-size: 1.2em;
+}
+
+button{
+   padding: 10px;
+   margin: 5px 20px 30px 20px;
+   width: 10%;
+   border: solid 2px rgb(14, 23, 37);
+   border-radius: 10px;
+   background-color: rgba(202, 205, 218, 0.671);
+   cursor: pointer;
+}
+
+/* Changes the cursor to not allowed to show that user can't click the button */
+.pageNumContainer button:disabled {
+   cursor: not-allowed;
+}
+
+.pageNumContainer button:disabled:hover {
+   background-color: rgba(202, 205, 218, 0.671);
+   color: rgb(175, 175, 175);
+}
+
+button:hover {
+   background-color: rgb(14, 23, 37);
+   color: white;
+}
+
+.readingList{
+   width: 42%;
+   text-align: left;
+   margin: 0 auto 40px auto;
+}
+
+.readingList label{
+   margin-right: 5px;
+   font-size: 1.1em;
+}
+
+.checkBox{
+   margin-top: -1px;
+   vertical-align: middle;
+}
+
+/* Media query */
+@media only screen and (max-width: 780px) {
+    .mainContainer{
+        display: block;
+    }
+
+    .paperImg{
+        float: none;
+        width: 87%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .paperContainer{
+        float: none;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    .captionOverlay{
+        position: unset;
+        text-align: center;
+        background-color: unset;
+        margin-bottom: 30px;
+    }
+
+    .topContainer{
+        width: 70%;
+    }
+    
+    .readingList{
+        width: 74%;
+        margin-bottom: 25px; 
+     }
+
+    button{
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .topContainer{
+        width: 65%;
+    }
+
+    button{
+        width: 20%;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    button{
+        width: 25%;
+    }
+    
+    select{
+        width: 80%;
+    }
+}

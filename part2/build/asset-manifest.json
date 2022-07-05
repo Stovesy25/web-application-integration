@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kf6012/coursework/part2/static/css/main.dea5d2bd.css",
+    "main.js": "/kf6012/coursework/part2/static/js/main.48e035e5.js",
+    "static/js/787.cfd8f164.chunk.js": "/kf6012/coursework/part2/static/js/787.cfd8f164.chunk.js",
+    "static/media/paper_img.jpg": "/kf6012/coursework/part2/static/media/paper_img.fbbb75089d29b384c9e8.jpg",
+    "index.html": "/kf6012/coursework/part2/index.html",
+    "main.dea5d2bd.css.map": "/kf6012/coursework/part2/static/css/main.dea5d2bd.css.map",
+    "main.48e035e5.js.map": "/kf6012/coursework/part2/static/js/main.48e035e5.js.map",
+    "787.cfd8f164.chunk.js.map": "/kf6012/coursework/part2/static/js/787.cfd8f164.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dea5d2bd.css",
+    "static/js/main.48e035e5.js"
+  ]
+}

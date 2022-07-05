@@ -1,0 +1,112 @@
+/*Styling for the navbar*/
+ul {
+    text-align:center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(29, 36, 66);
+}
+
+li {
+    display: inline;
+    border-right: rgb(255, 255, 255) solid 1px;
+    width: 200px;
+}
+
+li:nth-child(1){
+    border-left: rgb(255, 255, 255) solid 1px;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 20px 25px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/*Styling for the footer*/
+footer{
+    position: static;
+    margin-top: 80px;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgb(29, 36, 66);
+    max-width: -webkit-fill-available
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+
+/* Styling for login form and logout container */
+.logoutContainer{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+.loginContainer div {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginContainer input[type=text], input[type=password] {
+    width: 20%;
+    margin: 10px auto;
+ }
+
+.loginContainer button {
+    margin: 15px auto 320px auto;
+}
+
+.logoutButton{
+    margin: 20px auto 20px auto;
+}
+
+/* Media query */
+@media only screen and (max-width: 804px) {
+    li:nth-child(4){
+        border-left: rgb(255, 255, 255) solid 1px;
+    }
+
+    .loginContainer input[type=text], input[type=password] {
+        width: 40%;
+     }
+}
+
+@media only screen and (max-width: 604px) {
+    li:nth-child(3){
+        border-left: rgb(255, 255, 255) solid 1px;
+    }
+
+    li:nth-child(4){
+        border-left: unset;
+    }
+
+    .loginContainer input[type=text], input[type=password] {
+        width: 60%;
+     }
+}
+
+@media only screen and (max-width: 403px) {
+    li:nth-child(2){
+        border-left: rgb(255, 255, 255) solid 1px;
+    }
+
+    li:nth-child(4){
+        border-left: rgb(255, 255, 255) solid 1px;
+    }
+}
