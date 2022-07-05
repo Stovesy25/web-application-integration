@@ -1,0 +1,100 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+    background-color: rgba(243, 243, 196, 0.829);
+    margin: 0px;
+}
+
+h1, h2, h3, p{
+    margin-left: 20px;
+}
+
+/*Navbar*/
+ul {
+    text-align:center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(29, 36, 66);
+}
+
+li {
+    display: inline;
+    border-right: rgb(255, 255, 255) solid 1px;
+    width: 200px;
+}
+
+li:nth-child(1){
+    border-left: rgb(255, 255, 255) solid 1px;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 20px 25px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+img{
+    margin: 10px;
+    height: 170px;
+    width: 170px;
+    cursor: pointer;
+}
+
+.link{
+    margin-left: 20px;
+}
+
+.endpointContainer{
+    background-color: rgb(205, 245, 245);
+    width: 50%;
+    margin: 0 0 20px 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.endpointContainer h3{
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.endpointContainer p{
+    margin-top: 0px;
+    word-break: break-all;
+}
+
+.endpointContainer a{
+    margin-top: 0px;
+    word-break: break-all;
+}
+
+.endpointContainer pre{
+    overflow-x: auto;
+    word-wrap: break-word;
+    padding: 10px 0px;
+}
+
+/* Media query */
+@media only screen and (max-width: 770px) {
+    .endpointContainer{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    li:nth-child(2){
+        border-left: rgb(255, 255, 255) solid 1px;
+    }
+}
